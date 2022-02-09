@@ -21,46 +21,36 @@ a:hover {
  text-decoration: none;
 }
 
-button{
-  font-family: 'Montserrat', sans-serif;
-}
-
 /*************************************************************************************************/
 /*                                      Class Selectors                                          */
 /*************************************************************************************************/
 
 /* Headers */
 .main-header{
-  /* color: #000; */
+  color: #000;
   font-size: 3.7rem;
   font-weight: 300;
   letter-spacing: 0.04em;
-  margin: 0 0 3rem;
-  /* text-shadow: 1px 1px 4px #6ce3e6, 0 0 25px #f0f0f0, 0 0 9px #54e39e; */
-  color: white;
-  text-shadow: 2px 2px 4px #000000;
+  margin: 0 0 2rem;
+  text-shadow: 1px 1px 4px #6ce3e6, 0 0 25px #f0f0f0, 0 0 9px #54e39e;
 }
 
 .main-header-2{
-  /* color: #000; */
+  color: #000;
   font-size: 3.7rem;
   font-weight: 300;
   letter-spacing: 0.04em;
-  margin: 0 0 3rem;
-  /* text-shadow: 1px 1px 4px #ffb7c5, 0 0 25px #f0f0f0, 0 0 9px #DC143C; */
-  color: white;
-  text-shadow: 2px 2px 4px #000000;
+  margin: 0 0 2rem;
+  text-shadow: 1px 1px 4px #ffb7c5, 0 0 25px #f0f0f0, 0 0 9px #DC143C;
 }
 
 .main-header-3{
-  /* color: #000; */
+  color: #000;
   font-size: 3.7rem;
   font-weight: 300;
   letter-spacing: 0.04em;
-  margin: 0 0 3rem;
-  /* text-shadow: 1px 1px 4px #ffb7c5, 0 0 25px #f0f0f0, 0 0 9px #e3d27f; */
-  color: white;
-  text-shadow: 2px 2px 4px #000000;
+  margin: 0 0 2rem;
+  text-shadow: 1px 1px 4px #ffb7c5, 0 0 25px #f0f0f0, 0 0 9px #e3d27f;
 }
 
 .subscribe-header{
@@ -80,42 +70,13 @@ button{
   text-shadow: 1px 1px 2px #393e46, 0 0 25px #000, 0 0 5px #929aab;
 }
 
+.header-img{
+  height: 10rem;
+}
+
 /* Paragraphs */
 .bigger-text{
   font-size: 1.3rem;
-}
-
-/* Buttons */
-.btn-spotify{
-  background-color: #1DB954;
-  color: white;
-  margin: 0 0.5rem;
-}
-
-.btn-spotify:hover{
-  background-color: #000;
-  color: #fff;
-}
-
-.btn-twitch{
-  background-color: #6441a5;
-  color: white;
-  margin: 0 0.5rem;
-}
-
-.btn-twitch:hover{
-  background-color: #fff;
-  color: #000;
-}
-
-.btn-mail-chimp{
-  background-color: #FFE01B;
-  color: #403B3B;
-}
-
-.btn-mail-chimp:hover{
-  background-color: #403B3B;
-  color: #FFE01B;
 }
 
 /* Containers */
@@ -129,12 +90,11 @@ button{
 
 /* Images */
 .img-box{
-  height: 28rem;
-  margin: 0 0 3rem;
+  width: 80%;
 }
 
-.img-thumbnail {
-  margin: 1rem;
+.img-thumbnail{
+  height: 80%;
 }
 
 .img-carousel{
@@ -147,18 +107,6 @@ button{
 }
 
 /* Navbar */
-.nav-switch.scrolled {
-  background-color: #333333 !important;
-  transition: background-color 200ms linear;
-}
-
-.nav-link-1.scrolled,
-.nav-link-2.scrolled,
-.nav-link-3.scrolled{
-  color: #fff;
-  transition: color 200ms linear;
-}
-
 .navbar-brand{
   text-align: center;
 }
@@ -167,10 +115,22 @@ button{
   text-align: center;
 }
 
+.fixed-top.scrolled{
+  background-color: black !important;
+  transition: background-color 200ms linear;
+}
+
 .nav-link-1,
 .nav-link-2,
 .nav-link-3{
   color: black;
+}
+
+
+.nav-link-1.scrolled,
+.nav-link-2.scrolled,
+.nav-link-3.scrolled{
+  color: white;
 }
 
 .nav-link-1:hover{
@@ -187,11 +147,12 @@ button{
 
 /* Intro Section */
 .intro-container{
-  background-image: url('../images/intro-cover-1.jpg');
-	background-position: right center;
+  /* background-image: url('../images/iridescent-img.jpg'); */
+  background-image: url('../images/intro-cover.jpg');
+	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-  padding: 40rem 2rem 10rem;
+  padding: 10rem 2rem 30rem;
   text-align: center;
   width: 100%;
 
@@ -258,7 +219,7 @@ button{
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 3rem 2rem 4rem;
+  padding: 1rem 2rem 2em;
 }
 
 /* Footer section */
@@ -267,14 +228,20 @@ button{
 }
 
 .cta-header{
-  /* color: #000; */
+  color: #000;
   font-size: 3.7rem;
   font-weight: 300;
   letter-spacing: 0.04em;
   margin: 0 0 2rem;
-  /* text-shadow: 1px 1px 4px #ff8c00, 0 0 25px #f0f0f0, 0 0 8px #e3d27f; */
-  color: white;
-  text-shadow: 2px 2px 4px #000000;
+  text-shadow: 1px 1px 4px #ff8c00, 0 0 25px #f0f0f0, 0 0 8px #e3d27f;
+}
+
+.factor-logo{
+  width: 12rem;
+}
+
+.canada-watermark{
+  width: 12rem;
 }
 
 /* Social Icons */
